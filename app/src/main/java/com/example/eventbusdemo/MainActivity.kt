@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     @Subscribe
-    fun onOtherEvent(event: MessageEvent) {
+    fun onMessageEvent(event: MessageEvent) {
         Log.d("EB", "RECEIVED")
         Toast.makeText(this, "RECEIVED:", Toast.LENGTH_LONG)
     }
